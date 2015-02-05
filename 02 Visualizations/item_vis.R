@@ -1,0 +1,2 @@
+ggplot (dfI, aes(x=ARTIST, y=UNIT_PRICE)) + stat_summary(fun.y=mean, geom="bar") + xlab("Artist") + ylab("Average Unit Price ($)") + ggtitle("Average Unit Price per Artist")
+ggsave(file="item_vis.png", path="00 Doc")
